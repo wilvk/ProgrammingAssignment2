@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix() ) {
 	matrixChanged <- TRUE
 	
 	if(exists("tempMatrix") && tempMatrix == x) {
-	    matrixChanged <- FALSE
+		matrixChanged <- FALSE
   	}
   	else {
     		tempMatrix <- x
