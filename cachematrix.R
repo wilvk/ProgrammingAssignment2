@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
 
   m <- x$getMatrix()
   
-	if(!is.null(m) || x$hasMatrixChanged() ) {
+	if(!is.null(m) && x$hasMatrixChanged() ) {
 		message("getting cached matrix")
 		return(m)
 	}
